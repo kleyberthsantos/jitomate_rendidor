@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilos.css">
   <title>Jitomate Focus</title>
-  <script src="scriptPomodoro.js"></script>
 </head>
 <body>
   <header>
@@ -22,10 +21,10 @@
         </ul>
       </div>
       <div class="timeContainer">
-        <div class="timer"> 25:00</div>
+        <div class="timer" id="timer"> <h5>00:00</h5> </div>
       </div>
       <div class="button">
-        <button class="startButton">Start</button>
+        <button class="startButton" id="startButton">Start</button>
       </div>
       <div class="counterContainer">
         <div class="counter">número de ciclos</div>
@@ -38,4 +37,5 @@
   <footer class="footerContainer">
     <div class="footer">footer</div>
   </footer>
+  <script src="scriptPomodoro.js"></script>
 </html>
