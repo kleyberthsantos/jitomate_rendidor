@@ -5,6 +5,53 @@
 }
 
 body {
-  background-color: rgb(186, 73, 73);
-  color: white;
+background-color: rgb(186, 73, 73);
+color: white;
 }
+
+a {
+text-decoration: none;
+}
+main  {
+height: 100vh;
+width: 100%;
+display: grid;
+place-items: center;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+border: 1px solid #fefefe;
+width: 50%;
+height: 40%;
+border-radius: 16px;
+}
+.options {
+height: 10%;
+width: 100%;
+}
+.periodsContainer {
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+}
+.periods {
+display: inline-block;
+}
+
+.periods a {
+color: #fefefe;
+}
+
+.timeContainer {
+height: 30%;
+display: grid;
+place-items: center;
+}
+
+.timer {
+font-size: 60px;
+} 
