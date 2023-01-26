@@ -38,6 +38,15 @@ startButton.addEventListener("click", function () {
   }, 1000)
 });
 
+//CONTAR LAS VECES QUE INICIA STARTCOUNTER
+let count = 0;
+stopButton.addEventListener("click", function () {
+  count++;
+  let counter = document.getElementById("counter");
+  counter.innerHTML = `Ciclos realizados hoy: ${count}`;
+  console.log(count);
+  })
+
 //DETIENE EL CONTADOR Y LO REGRESA A SU ESTADO ORIGINAL
 stopButton.addEventListener("click", function () {
   console.log("stop");
@@ -50,7 +59,7 @@ stopButton.addEventListener("click", function () {
 
 
 
-/* TRANSFORMA LOS SEGUNDOS EN UN STRING QUE MUETRA EN EL DOM EL FORMATO "MM:SS". 
+/* TRANSFORMA LOS SEGUNDOS EN UN STRING QUE MUESTRA EN EL DOM EL FORMATO "MM:SS". 
 SE INVOCA EN LA FUNCION screenTime()
  */
 function secondsToString(seconds) {
